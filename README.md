@@ -1,0 +1,19 @@
+# Data-Quality-Assistant-Application
+
+npm install
+
+git clone https://github.com/Sunilz2503/Data-Quality-Assistant-Application
+
+cd Data-Quality-Assistant-Application
+
+npm install
+
+REACT_APP_FIREBASE_API_KEY=YOUR_API_KEY
+REACT_APP_FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
+REACT_APP_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
+REACT_APP_FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=YOUR_MESSAGING_SENDER_ID
+REACT_APP_FIREBASE_APP_ID=YOUR_APP_ID
+REACT_APP_APP_ID=YOUR_CANVAS_APP_ID # Use a unique ID for your app's Firestore collections
+
+npm start
