@@ -1,19 +1,38 @@
 # Data-Quality-Assistant-Application
 
-npm install
+git init
+git add .
+git commit -m "Initial commit of Data Quality Assistant"
 
-git clone https://github.com/Sunilz2503/Data-Quality-Assistant-Application
+git remote add origin <your_repository_url>
+git branch -M main
+git push -u origin main
 
-cd Data-Quality-Assistant-Application
+npm install gh-pages --save-dev 
 
-npm install
 
-REACT_APP_FIREBASE_API_KEY=YOUR_API_KEY
-REACT_APP_FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
-REACT_APP_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
-REACT_APP_FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=YOUR_MESSAGING_SENDER_ID
-REACT_APP_FIREBASE_APP_ID=YOUR_APP_ID
-REACT_APP_APP_ID=YOUR_CANVAS_APP_ID # Use a unique ID for your app's Firestore collections
+{
+  "name": "data-quality-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPOSITORY_NAME>",
+  // ... rest of your package.json
+}
 
-npm start
+
+{
+  // ...
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build", // Or yarn build
+    "deploy": "gh-pages -d build"
+  },
+  // ...
+}
+
+
+npm run deploy
+# OR yarn deploy
