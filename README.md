@@ -1,3 +1,11 @@
+git init
+
+npm install
+
+package.json
+
+npm run deploy
+
 import React, { useState, useEffect } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from 'firebase/auth';
