@@ -5,7 +5,7 @@ This application helps ensure the quality of data by identifying issues and sugg
 To install the application, use the following commands:
 1. Clone the repository:
    ```bash
-   git clone [<repository_url>](https://github.com/Sunilz2503/Data-Quality-Assistant-Application/
+   git clone https://github.com/Sunilz2503/Data-Quality-Assistant-Application/
    cd Data-Quality-Assistant-Application
    npm install
 
