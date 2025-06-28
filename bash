@@ -1,15 +1,22 @@
-git init
-git add .
-git commit -m "Initial commit of Data Quality Assistant"
+# Clone the repository
+git clone https://github.com/your-username/data-quality-assistant.git
+cd data-quality-assistant
 
-git remote add origin https://github.com/Sunilz2503/Data-Quality-Assistant-Application.git
-git branch -M main
-git push -u origin main
+# Create project structure
+mkdir -p backend frontend/public frontend/src/{components,services}
 
-npm install gh-pages --save-dev
-# OR
-yarn add gh-pages --dev
+# Add files to their respective locations
 
-npm run deploy
-# OR
-yarn deploy
+# Initialize Python virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate    # Windows
+
+# Install backend dependencies
+cd backend
+pip install -r requirements.txt
+
+# Initialize React app
+cd ../frontend
+npx create-react-app . --template typescript
+npm install axios
