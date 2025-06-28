@@ -3,6 +3,14 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from 'firebase/auth';
 import { getFirestore, collection, query, onSnapshot, addDoc } from 'firebase/firestore';
 
+homepage
+{
+  "name": "data-quality-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://github.com/Sunilz2503.github.io/Data-Quality-Assistant-Application"
+}
+
 // Custom Modal Component
 const Modal = ({ title, message, onClose }) => {
     return (
